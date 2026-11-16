@@ -1,0 +1,122 @@
+{
+  "fs_s2_1000k_stoch": {
+    "steps": 1626,
+    "gaussian_mean_avg": {
+      "steering": -0.08136382699012756,
+      "throttle": 1.435088872909546
+    },
+    "gaussian_mean_std_over_steps": {
+      "steering": 0.4202846586704254,
+      "throttle": 0.4155426323413849
+    },
+    "gaussian_std_avg": {
+      "steering": 7830.5859375,
+      "throttle": 174.22613525390625
+    },
+    "gaussian_std_median": {
+      "steering": 0.22559602558612823,
+      "throttle": 0.5046080350875854
+    },
+    "share_steps_std_over_1": {
+      "steering": 0.23739237392373924,
+      "throttle": 0.3062730627306273
+    },
+    "share_steps_std_over_1_when_slow": 0.565843621399177,
+    "share_steps_std_over_1_when_fast": 0.1956140350877193,
+    "sampled_clipped_share": {
+      "steering": 0.23185731857318573,
+      "throttle": 0.8296432964329643
+    },
+    "sampled_brake_share": 0.11562115621156212
+  },
+  "fs_s0_750k_stoch": {
+    "steps": 1759,
+    "gaussian_mean_avg": {
+      "steering": -0.13419339060783386,
+      "throttle": 1.841050624847412
+    },
+    "gaussian_mean_std_over_steps": {
+      "steering": 0.508823573589325,
+      "throttle": 0.6354157328605652
+    },
+    "gaussian_std_avg": {
+      "steering": 47.808509826660156,
+      "throttle": 91.7223129272461
+    },
+    "gaussian_std_median": {
+      "steering": 0.3061339557170868,
+      "throttle": 0.6674237251281738
+    },
+    "share_steps_std_over_1": {
+      "steering": 0.24673109721432632,
+      "throttle": 0.3473564525298465
+    },
+    "share_steps_std_over_1_when_slow": 0.6473880597014925,
+    "share_steps_std_over_1_when_fast": 0.21586263286999183,
+    "sampled_clipped_share": {
+      "steering": 0.23706651506537807,
+      "throttle": 0.8499147242751564
+    },
+    "sampled_brake_share": 0.1137009664582149
+  },
+  "fs_s1_250k_stoch": {
+    "steps": 1641,
+    "gaussian_mean_avg": {
+      "steering": -0.02958490513265133,
+      "throttle": 1.242023229598999
+    },
+    "gaussian_mean_std_over_steps": {
+      "steering": 0.33258482813835144,
+      "throttle": 0.26206332445144653
+    },
+    "gaussian_std_avg": {
+      "steering": 2.0332119464874268,
+      "throttle": 0.9184890985488892
+    },
+    "gaussian_std_median": {
+      "steering": 0.41404426097869873,
+      "throttle": 0.3912807106971741
+    },
+    "share_steps_std_over_1": {
+      "steering": 0.2400975015234613,
+      "throttle": 0.20597196831200487
+    },
+    "share_steps_std_over_1_when_slow": 0.4253731343283582,
+    "share_steps_std_over_1_when_fast": 0.13478611783696529,
+    "sampled_clipped_share": {
+      "steering": 0.22181596587446678,
+      "throttle": 0.7592931139549055
+    },
+    "sampled_brake_share": 0.07373552711761121
+  },
+  "lidar_240k_stoch": {
+    "steps": 1222,
+    "gaussian_mean_avg": {
+      "steering": 0.015292825177311897,
+      "throttle": 1.5373889207839966
+    },
+    "gaussian_mean_std_over_steps": {
+      "steering": 0.2598542869091034,
+      "throttle": 0.28143298625946045
+    },
+    "gaussian_std_avg": {
+      "steering": 0.4603866934776306,
+      "throttle": 0.7951462268829346
+    },
+    "gaussian_std_median": {
+      "steering": 0.3928574025630951,
+      "throttle": 0.6896762251853943
+    },
+    "share_steps_std_over_1": {
+      "steering": 0.031096563011456628,
+      "throttle": 0.04746317512274959
+    },
+    "share_steps_std_over_1_when_slow": 0.04430379746835443,
+    "share_steps_std_over_1_when_fast": 0.047932330827067667,
+    "sampled_clipped_share": {
+      "steering": 0.062193126022913256,
+      "throttle": 0.8052373158756138
+    },
+    "sampled_brake_share": 0.01800327332242226
+  }
+}

@@ -1,0 +1,633 @@
+{
+  "seed": 0,
+  "env_config": {
+    "map": "X",
+    "traffic_density": 0.2,
+    "traffic_mode": "trigger",
+    "random_traffic": true,
+    "horizon": 300,
+    "spawn_seed": 0,
+    "traffic_seed": 0
+  },
+  "groups": {
+    "original_det": {
+      "checkpoint": "static_goal/checkpoint_final",
+      "traffic": true,
+      "episodes": 50,
+      "success_rate": 0.5,
+      "vehicle_collision_rate": 0.32,
+      "off_road_rate": 0.18,
+      "other_crash_rate": 0.0,
+      "timeout_rate": 0.0,
+      "counts": {
+        "goal_reached": 25,
+        "crash_vehicle": 16,
+        "out_of_road": 9,
+        "crash_other": 0,
+        "timeout": 0
+      },
+      "mean_reward": 93.79128182531345,
+      "std_reward": 33.88954261988801,
+      "mean_time_to_goal": 9.68,
+      "mean_steps": 84.68,
+      "mean_traffic_vehicles": 6.0
+    },
+    "traffic_det": {
+      "checkpoint": "static_goal_traffic/checkpoint_final",
+      "traffic": true,
+      "episodes": 50,
+      "success_rate": 0.68,
+      "vehicle_collision_rate": 0.26,
+      "off_road_rate": 0.06,
+      "other_crash_rate": 0.0,
+      "timeout_rate": 0.0,
+      "counts": {
+        "goal_reached": 34,
+        "crash_vehicle": 13,
+        "out_of_road": 3,
+        "crash_other": 0,
+        "timeout": 0
+      },
+      "mean_reward": 101.19353624658594,
+      "std_reward": 30.904405355524627,
+      "mean_time_to_goal": 9.464705882352941,
+      "mean_steps": 86.28,
+      "mean_traffic_vehicles": 6.0
+    },
+    "traffic_stoch": {
+      "checkpoint": "static_goal_traffic/checkpoint_final",
+      "traffic": true,
+      "episodes": 50,
+      "success_rate": 0.38,
+      "vehicle_collision_rate": 0.12,
+      "off_road_rate": 0.5,
+      "other_crash_rate": 0.0,
+      "timeout_rate": 0.0,
+      "counts": {
+        "goal_reached": 19,
+        "crash_vehicle": 6,
+        "out_of_road": 25,
+        "crash_other": 0,
+        "timeout": 0
+      },
+      "mean_reward": 87.27875599262954,
+      "std_reward": 32.36453135990985,
+      "mean_time_to_goal": 16.499999999999996,
+      "mean_steps": 127.22,
+      "mean_traffic_vehicles": 6.0
+    },
+    "script": {
+      "checkpoint": null,
+      "traffic": true,
+      "episodes": 50,
+      "success_rate": 0.46,
+      "vehicle_collision_rate": 0.54,
+      "off_road_rate": 0.0,
+      "other_crash_rate": 0.0,
+      "timeout_rate": 0.0,
+      "counts": {
+        "goal_reached": 23,
+        "crash_vehicle": 27,
+        "out_of_road": 0,
+        "crash_other": 0,
+        "timeout": 0
+      },
+      "mean_reward": 83.6711701290591,
+      "std_reward": 35.615519729626484,
+      "mean_time_to_goal": 12.547826086956523,
+      "mean_steps": 106.06,
+      "mean_traffic_vehicles": 6.0
+    },
+    "traffic_det_empty": {
+      "checkpoint": "static_goal_traffic/checkpoint_final",
+      "traffic": false,
+      "episodes": 50,
+      "success_rate": 1.0,
+      "vehicle_collision_rate": 0.0,
+      "off_road_rate": 0.0,
+      "other_crash_rate": 0.0,
+      "timeout_rate": 0.0,
+      "counts": {
+        "goal_reached": 50,
+        "crash_vehicle": 0,
+        "out_of_road": 0,
+        "crash_other": 0,
+        "timeout": 0
+      },
+      "mean_reward": 121.08731140107444,
+      "std_reward": 6.264808536753595,
+      "mean_time_to_goal": 9.216000000000001,
+      "mean_steps": 92.16,
+      "mean_traffic_vehicles": 0.0
+    }
+  },
+  "interaction_check": {
+    "episodes_trajectory_changed_over_1m": 50,
+    "median_max_position_difference_m": 3.6849999999999996,
+    "episodes_braked_over_2mps_with": 9,
+    "episodes_braked_over_2mps_without": 0,
+    "episodes_outcome_changed": 16,
+    "per_episode": [
+      {
+        "episode": 0,
+        "max_position_difference_m": 5.94,
+        "max_slowdown_with": 0.03,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.6,
+        "seconds_without": 9.3
+      },
+      {
+        "episode": 1,
+        "max_position_difference_m": 2.96,
+        "max_slowdown_with": 9.04,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 7.5,
+        "seconds_without": 9.7
+      },
+      {
+        "episode": 2,
+        "max_position_difference_m": 3.59,
+        "max_slowdown_with": 0.22,
+        "max_slowdown_without": 0.04,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.2,
+        "seconds_without": 9.0
+      },
+      {
+        "episode": 3,
+        "max_position_difference_m": 5.8,
+        "max_slowdown_with": 0.24,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "out_of_road",
+        "outcome_without": "goal_reached",
+        "seconds_with": 7.1,
+        "seconds_without": 8.9
+      },
+      {
+        "episode": 4,
+        "max_position_difference_m": 6.46,
+        "max_slowdown_with": 0.0,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 6.6,
+        "seconds_without": 9.0
+      },
+      {
+        "episode": 5,
+        "max_position_difference_m": 4.4,
+        "max_slowdown_with": 2.81,
+        "max_slowdown_without": 0.04,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 6.9,
+        "seconds_without": 9.1
+      },
+      {
+        "episode": 6,
+        "max_position_difference_m": 3.12,
+        "max_slowdown_with": 0.07,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.1,
+        "seconds_without": 8.9
+      },
+      {
+        "episode": 7,
+        "max_position_difference_m": 3.17,
+        "max_slowdown_with": 0.09,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.8,
+        "seconds_without": 9.7
+      },
+      {
+        "episode": 8,
+        "max_position_difference_m": 2.67,
+        "max_slowdown_with": 0.08,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.8,
+        "seconds_without": 9.7
+      },
+      {
+        "episode": 9,
+        "max_position_difference_m": 9.45,
+        "max_slowdown_with": 0.38,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.5,
+        "seconds_without": 8.9
+      },
+      {
+        "episode": 10,
+        "max_position_difference_m": 8.34,
+        "max_slowdown_with": 0.3,
+        "max_slowdown_without": 0.04,
+        "outcome_with": "out_of_road",
+        "outcome_without": "goal_reached",
+        "seconds_with": 6.9,
+        "seconds_without": 8.8
+      },
+      {
+        "episode": 11,
+        "max_position_difference_m": 2.5,
+        "max_slowdown_with": 0.04,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.4,
+        "seconds_without": 9.3
+      },
+      {
+        "episode": 12,
+        "max_position_difference_m": 4.07,
+        "max_slowdown_with": 0.0,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.6,
+        "seconds_without": 9.4
+      },
+      {
+        "episode": 13,
+        "max_position_difference_m": 4.88,
+        "max_slowdown_with": 0.16,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 10.1,
+        "seconds_without": 9.8
+      },
+      {
+        "episode": 14,
+        "max_position_difference_m": 2.09,
+        "max_slowdown_with": 0.0,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.2,
+        "seconds_without": 9.2
+      },
+      {
+        "episode": 15,
+        "max_position_difference_m": 3.84,
+        "max_slowdown_with": 0.0,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.4,
+        "seconds_without": 9.2
+      },
+      {
+        "episode": 16,
+        "max_position_difference_m": 3.22,
+        "max_slowdown_with": 0.1,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.6,
+        "seconds_without": 9.5
+      },
+      {
+        "episode": 17,
+        "max_position_difference_m": 3.78,
+        "max_slowdown_with": 0.2,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 8.9,
+        "seconds_without": 8.8
+      },
+      {
+        "episode": 18,
+        "max_position_difference_m": 4.9,
+        "max_slowdown_with": 0.08,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.3,
+        "seconds_without": 9.0
+      },
+      {
+        "episode": 19,
+        "max_position_difference_m": 2.51,
+        "max_slowdown_with": 0.18,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.1,
+        "seconds_without": 9.0
+      },
+      {
+        "episode": 20,
+        "max_position_difference_m": 8.91,
+        "max_slowdown_with": 0.45,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.7,
+        "seconds_without": 9.2
+      },
+      {
+        "episode": 21,
+        "max_position_difference_m": 2.4,
+        "max_slowdown_with": 0.19,
+        "max_slowdown_without": 0.11,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.6,
+        "seconds_without": 9.5
+      },
+      {
+        "episode": 22,
+        "max_position_difference_m": 7.89,
+        "max_slowdown_with": 3.22,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 6.8,
+        "seconds_without": 9.1
+      },
+      {
+        "episode": 23,
+        "max_position_difference_m": 6.31,
+        "max_slowdown_with": 0.64,
+        "max_slowdown_without": 0.08,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.6,
+        "seconds_without": 9.3
+      },
+      {
+        "episode": 24,
+        "max_position_difference_m": 3.56,
+        "max_slowdown_with": 0.0,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.0,
+        "seconds_without": 8.9
+      },
+      {
+        "episode": 25,
+        "max_position_difference_m": 5.79,
+        "max_slowdown_with": 8.4,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 6.5,
+        "seconds_without": 8.8
+      },
+      {
+        "episode": 26,
+        "max_position_difference_m": 6.24,
+        "max_slowdown_with": 9.1,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 6.7,
+        "seconds_without": 9.1
+      },
+      {
+        "episode": 27,
+        "max_position_difference_m": 3.09,
+        "max_slowdown_with": 0.22,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.5,
+        "seconds_without": 9.3
+      },
+      {
+        "episode": 28,
+        "max_position_difference_m": 8.24,
+        "max_slowdown_with": 5.08,
+        "max_slowdown_without": 0.11,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 7.0,
+        "seconds_without": 9.3
+      },
+      {
+        "episode": 29,
+        "max_position_difference_m": 2.93,
+        "max_slowdown_with": 0.0,
+        "max_slowdown_without": 0.04,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.4,
+        "seconds_without": 9.3
+      },
+      {
+        "episode": 30,
+        "max_position_difference_m": 2.74,
+        "max_slowdown_with": 0.01,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.6,
+        "seconds_without": 9.7
+      },
+      {
+        "episode": 31,
+        "max_position_difference_m": 9.77,
+        "max_slowdown_with": 0.98,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "out_of_road",
+        "outcome_without": "goal_reached",
+        "seconds_with": 7.2,
+        "seconds_without": 9.1
+      },
+      {
+        "episode": 32,
+        "max_position_difference_m": 2.69,
+        "max_slowdown_with": 8.74,
+        "max_slowdown_without": 0.04,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 6.5,
+        "seconds_without": 9.0
+      },
+      {
+        "episode": 33,
+        "max_position_difference_m": 9.6,
+        "max_slowdown_with": 0.1,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.5,
+        "seconds_without": 9.0
+      },
+      {
+        "episode": 34,
+        "max_position_difference_m": 7.42,
+        "max_slowdown_with": 0.24,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.4,
+        "seconds_without": 8.9
+      },
+      {
+        "episode": 35,
+        "max_position_difference_m": 1.72,
+        "max_slowdown_with": 1.83,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 7.2,
+        "seconds_without": 9.8
+      },
+      {
+        "episode": 36,
+        "max_position_difference_m": 2.39,
+        "max_slowdown_with": 0.04,
+        "max_slowdown_without": 0.15,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.4,
+        "seconds_without": 9.5
+      },
+      {
+        "episode": 37,
+        "max_position_difference_m": 4.48,
+        "max_slowdown_with": 0.41,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.4,
+        "seconds_without": 9.2
+      },
+      {
+        "episode": 38,
+        "max_position_difference_m": 2.32,
+        "max_slowdown_with": 0.1,
+        "max_slowdown_without": 0.11,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.5,
+        "seconds_without": 9.4
+      },
+      {
+        "episode": 39,
+        "max_position_difference_m": 1.55,
+        "max_slowdown_with": 0.02,
+        "max_slowdown_without": 0.04,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.6,
+        "seconds_without": 9.6
+      },
+      {
+        "episode": 40,
+        "max_position_difference_m": 3.31,
+        "max_slowdown_with": 0.08,
+        "max_slowdown_without": 0.08,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.6,
+        "seconds_without": 9.4
+      },
+      {
+        "episode": 41,
+        "max_position_difference_m": 2.77,
+        "max_slowdown_with": 9.84,
+        "max_slowdown_without": 0.12,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 7.0,
+        "seconds_without": 9.6
+      },
+      {
+        "episode": 42,
+        "max_position_difference_m": 12.86,
+        "max_slowdown_with": 0.46,
+        "max_slowdown_without": 0.07,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 10.1,
+        "seconds_without": 9.3
+      },
+      {
+        "episode": 43,
+        "max_position_difference_m": 1.91,
+        "max_slowdown_with": 0.12,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 6.4,
+        "seconds_without": 9.0
+      },
+      {
+        "episode": 44,
+        "max_position_difference_m": 2.55,
+        "max_slowdown_with": 0.0,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 8.9,
+        "seconds_without": 8.8
+      },
+      {
+        "episode": 45,
+        "max_position_difference_m": 4.58,
+        "max_slowdown_with": 0.0,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.7,
+        "seconds_without": 9.5
+      },
+      {
+        "episode": 46,
+        "max_position_difference_m": 8.2,
+        "max_slowdown_with": 0.64,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.5,
+        "seconds_without": 9.1
+      },
+      {
+        "episode": 47,
+        "max_position_difference_m": 4.83,
+        "max_slowdown_with": 0.0,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "goal_reached",
+        "outcome_without": "goal_reached",
+        "seconds_with": 9.2,
+        "seconds_without": 8.9
+      },
+      {
+        "episode": 48,
+        "max_position_difference_m": 2.0,
+        "max_slowdown_with": 5.96,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 6.2,
+        "seconds_without": 8.8
+      },
+      {
+        "episode": 49,
+        "max_position_difference_m": 3.42,
+        "max_slowdown_with": 0.69,
+        "max_slowdown_without": 0.0,
+        "outcome_with": "crash_vehicle",
+        "outcome_without": "goal_reached",
+        "seconds_with": 7.1,
+        "seconds_without": 9.2
+      }
+    ]
+  }
+}

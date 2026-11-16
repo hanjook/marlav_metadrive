@@ -1,0 +1,198 @@
+{
+  "policy": "untrained",
+  "checkpoint": null,
+  "seed": 1,
+  "explore": false,
+  "summary": {
+    "episodes": 20,
+    "success_rate": 0.0,
+    "collision_rate": 0.0,
+    "off_road_rate": 0.0,
+    "timeout_rate": 1.0,
+    "mean_reward": 0.08013323324738411,
+    "std_reward": 0.007765689783150223,
+    "mean_steps": 300.0
+  },
+  "episodes": [
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.07305637411871069,
+      "steps": 300,
+      "final_dist_to_goal": 103.42430305506021
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.08495673491121453,
+      "steps": 300,
+      "final_dist_to_goal": 119.53874516510425
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.08014098756689818,
+      "steps": 300,
+      "final_dist_to_goal": 116.24262231080101
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.07081259410320663,
+      "steps": 300,
+      "final_dist_to_goal": 114.02308345104424
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.0940900780385163,
+      "steps": 300,
+      "final_dist_to_goal": 114.28278060747705
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.073758331195169,
+      "steps": 300,
+      "final_dist_to_goal": 111.49573395490529
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.07861453088850807,
+      "steps": 300,
+      "final_dist_to_goal": 107.4149620318257
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.07645806513165333,
+      "steps": 300,
+      "final_dist_to_goal": 111.72226280327915
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.06897212692305044,
+      "steps": 300,
+      "final_dist_to_goal": 106.72630004845111
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.09514098018615143,
+      "steps": 300,
+      "final_dist_to_goal": 116.40080384361772
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.08673920799343875,
+      "steps": 300,
+      "final_dist_to_goal": 119.79077044317383
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.08718145321699337,
+      "steps": 300,
+      "final_dist_to_goal": 114.35748577142475
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.07621118068924153,
+      "steps": 300,
+      "final_dist_to_goal": 117.23646547077522
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.07795792844448593,
+      "steps": 300,
+      "final_dist_to_goal": 107.4785526508522
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.08978248151762838,
+      "steps": 300,
+      "final_dist_to_goal": 112.76797520762545
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.08232696888524026,
+      "steps": 300,
+      "final_dist_to_goal": 102.86935360369452
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.07346181832769773,
+      "steps": 300,
+      "final_dist_to_goal": 107.99390421524869
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.06782072813454643,
+      "steps": 300,
+      "final_dist_to_goal": 111.66892244940644
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.07903374331660777,
+      "steps": 300,
+      "final_dist_to_goal": 119.26597500124507
+    },
+    {
+      "goal_reached": false,
+      "crash": false,
+      "out_of_road": false,
+      "timeout": true,
+      "reward": 0.08614835135872345,
+      "steps": 300,
+      "final_dist_to_goal": 103.08164466769608
+    }
+  ]
+}

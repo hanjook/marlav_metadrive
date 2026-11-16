@@ -1,0 +1,88 @@
+{
+  "spawn_seed": 0,
+  "traffic_seed": 0,
+  "script_action": [
+    0.0,
+    0.5
+  ],
+  "episodes": [
+    {
+      "episode": 0,
+      "traffic_seed": 1826701614,
+      "num_traffic_vehicles": 6,
+      "vehicles_moved": 6,
+      "vehicles_through_junction": 6,
+      "steps_ego_and_traffic_in_junction": 29,
+      "min_dist_to_traffic": 10.52,
+      "ego_policy": "EnvInputPolicy",
+      "goal_region_unchanged": true,
+      "scripted_outcome": "SUCCESS",
+      "steps": 128
+    },
+    {
+      "episode": 1,
+      "traffic_seed": 1367864806,
+      "num_traffic_vehicles": 6,
+      "vehicles_moved": 6,
+      "vehicles_through_junction": 5,
+      "steps_ego_and_traffic_in_junction": 28,
+      "min_dist_to_traffic": 4.32,
+      "ego_policy": "EnvInputPolicy",
+      "goal_region_unchanged": true,
+      "scripted_outcome": "SUCCESS",
+      "steps": 131
+    },
+    {
+      "episode": 2,
+      "traffic_seed": 1097657231,
+      "num_traffic_vehicles": 6,
+      "vehicles_moved": 6,
+      "vehicles_through_junction": 5,
+      "steps_ego_and_traffic_in_junction": 12,
+      "min_dist_to_traffic": 3.53,
+      "ego_policy": "EnvInputPolicy",
+      "goal_region_unchanged": true,
+      "scripted_outcome": "VEHICLE COLLISION",
+      "steps": 82
+    },
+    {
+      "episode": 3,
+      "traffic_seed": 579362555,
+      "num_traffic_vehicles": 6,
+      "vehicles_moved": 5,
+      "vehicles_through_junction": 5,
+      "steps_ego_and_traffic_in_junction": 32,
+      "min_dist_to_traffic": 3.75,
+      "ego_policy": "EnvInputPolicy",
+      "goal_region_unchanged": true,
+      "scripted_outcome": "SUCCESS",
+      "steps": 121
+    },
+    {
+      "episode": 4,
+      "traffic_seed": 661058651,
+      "num_traffic_vehicles": 6,
+      "vehicles_moved": 6,
+      "vehicles_through_junction": 6,
+      "steps_ego_and_traffic_in_junction": 16,
+      "min_dist_to_traffic": 3.55,
+      "ego_policy": "EnvInputPolicy",
+      "goal_region_unchanged": true,
+      "scripted_outcome": "VEHICLE COLLISION",
+      "steps": 87
+    },
+    {
+      "episode": 5,
+      "traffic_seed": 87989972,
+      "num_traffic_vehicles": 6,
+      "vehicles_moved": 6,
+      "vehicles_through_junction": 6,
+      "steps_ego_and_traffic_in_junction": 30,
+      "min_dist_to_traffic": 7.4,
+      "ego_policy": "EnvInputPolicy",
+      "goal_region_unchanged": true,
+      "scripted_outcome": "SUCCESS",
+      "steps": 125
+    }
+  ]
+}

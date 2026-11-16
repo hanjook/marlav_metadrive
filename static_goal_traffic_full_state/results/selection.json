@@ -1,0 +1,10 @@
+{
+  "rule": "validation set only (seeds 100, 101): most successes, then fewest vehicle collisions, then reward",
+  "full_state": "fs_s2_1000k_stoch",
+  "full_state_per_seed": {
+    "0": "fs_s0_750k_stoch",
+    "1": "fs_s1_250k_stoch",
+    "2": "fs_s2_1000k_stoch"
+  },
+  "lidar": "lidar_240k_stoch"
+}

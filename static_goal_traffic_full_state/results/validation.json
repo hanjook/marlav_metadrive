@@ -1,0 +1,45 @@
+{
+  "observation_dim": 137,
+  "checks": {
+    "1 shape matches observation space": {
+      "passed": true,
+      "detail": "3909 observations, shape (137,)"
+    },
+    "2 no NaN or inf": {
+      "passed": true,
+      "detail": "3909 observations"
+    },
+    "6 traffic slots stable within episodes": {
+      "passed": true,
+      "detail": "slot names fixed per episode, slot features match the named vehicle every step, removed slots are all-zero and never return"
+    },
+    "7 features within declared bounds": {
+      "passed": true,
+      "detail": "all values in [-1, 1]; raw values clipped on 0.00% of feature-steps (max 0.0% for index 0)"
+    },
+    "8 EnvInputPolicy applies the action to the ego": {
+      "passed": true,
+      "detail": "info['policy'] and raw_action checked every step"
+    },
+    "9 traffic vehicles controlled by IDM": {
+      "passed": true,
+      "detail": "every traffic vehicle's policy is IDMPolicy every step; up to 6 present; traffic moved: True"
+    },
+    "3 same seeds reproduce the observation": {
+      "passed": true,
+      "detail": "initial observation bit-identical across two resets with seed 7; the next 30 steps agree to 9.3e-09 (Bullet physics float noise)"
+    },
+    "4 different traffic seeds change traffic features": {
+      "passed": true,
+      "detail": "same ego start: ego part identical=True; traffic part differs=True"
+    },
+    "5 moving a vehicle changes its slot only": {
+      "passed": true,
+      "detail": "slot 0: position change -> rel_forward/rel_left/distance changed, velocity set to 12 m/s -> speed feature 0.400 (expected 0.400); all other features unchanged"
+    },
+    "extra: LiDAR sees nothing without traffic": {
+      "passed": true,
+      "detail": "with traffic_density 0, all 240 beams read 1.0 every step (no detection) and all traffic slots are 0"
+    }
+  }
+}

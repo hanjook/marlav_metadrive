@@ -1,0 +1,10 @@
+# MetaDrive source, cloned by setup.sh
+upstream/
+# training outputs (large; share checkpoints separately)
+runs/
+checkpoint_*/
+logs/
+*.zip
+__pycache__/
+*.pyc
+.DS_Store

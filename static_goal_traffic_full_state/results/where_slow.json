@@ -1,0 +1,87 @@
+{
+  "fs_s2_1000k_stoch": {
+    "approach (x < 50 m)": {
+      "slow_steps": 266,
+      "steps": 5048,
+      "episodes_with_slow_steps": 97
+    },
+    "junction (50-87.5 m)": {
+      "slow_steps": 3453,
+      "steps": 7697,
+      "episodes_with_slow_steps": 86
+    },
+    "exit road (> 87.5 m)": {
+      "slow_steps": 4,
+      "steps": 2186,
+      "episodes_with_slow_steps": 1
+    }
+  },
+  "lidar_240k_stoch": {
+    "approach (x < 50 m)": {
+      "slow_steps": 484,
+      "steps": 6305,
+      "episodes_with_slow_steps": 100
+    },
+    "junction (50-87.5 m)": {
+      "slow_steps": 232,
+      "steps": 3924,
+      "episodes_with_slow_steps": 17
+    },
+    "exit road (> 87.5 m)": {
+      "slow_steps": 0,
+      "steps": 2132,
+      "episodes_with_slow_steps": 0
+    }
+  },
+  "script": {
+    "approach (x < 50 m)": {
+      "slow_steps": 1100,
+      "steps": 6516,
+      "episodes_with_slow_steps": 100
+    },
+    "junction (50-87.5 m)": {
+      "slow_steps": 0,
+      "steps": 2259,
+      "episodes_with_slow_steps": 0
+    },
+    "exit road (> 87.5 m)": {
+      "slow_steps": 0,
+      "steps": 1075,
+      "episodes_with_slow_steps": 0
+    }
+  },
+  "fs_s2_1000k_stoch_off": {
+    "approach (x < 50 m)": {
+      "slow_steps": 103,
+      "steps": 4500,
+      "episodes_with_slow_steps": 94
+    },
+    "junction (50-87.5 m)": {
+      "slow_steps": 20742,
+      "steps": 23282,
+      "episodes_with_slow_steps": 98
+    },
+    "exit road (> 87.5 m)": {
+      "slow_steps": 0,
+      "steps": 0,
+      "episodes_with_slow_steps": 0
+    }
+  },
+  "lidar_240k_stoch_off": {
+    "approach (x < 50 m)": {
+      "slow_steps": 484,
+      "steps": 6328,
+      "episodes_with_slow_steps": 100
+    },
+    "junction (50-87.5 m)": {
+      "slow_steps": 0,
+      "steps": 3730,
+      "episodes_with_slow_steps": 0
+    },
+    "exit road (> 87.5 m)": {
+      "slow_steps": 0,
+      "steps": 2677,
+      "episodes_with_slow_steps": 0
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "selection": {
+    "rule": "validation set only (seeds 100, 101): most successes, then fewest vehicle collisions, then reward",
+    "full_state": "fs_s2_1000k_stoch",
+    "full_state_per_seed": {
+      "0": "fs_s0_750k_stoch",
+      "1": "fs_s1_250k_stoch",
+      "2": "fs_s2_1000k_stoch"
+    },
+    "lidar": "lidar_240k_stoch"
+  },
+  "clips": {
+    "success": {
+      "group": "fs_s2_1000k_stoch",
+      "seed": 0,
+      "episode": 7,
+      "status": "SUCCESS",
+      "seconds": 18.9,
+      "traffic_seed": 35492826
+    },
+    "lidar_same_episode": {
+      "group": "lidar_240k_stoch",
+      "seed": 0,
+      "episode": 7,
+      "status": "VEHICLE COLLISION",
+      "seconds": 11.1,
+      "traffic_seed": 35492826
+    },
+    "onoff_on": {
+      "group": "fs_s2_1000k_stoch",
+      "seed": 0,
+      "episode": 24,
+      "status": "SUCCESS",
+      "seconds": 18.0,
+      "traffic_seed": 846428919
+    },
+    "onoff_off": {
+      "group": "fs_s2_1000k_stoch_off",
+      "seed": 0,
+      "episode": 24,
+      "status": "TIMEOUT",
+      "seconds": 30.0,
+      "traffic_seed": 846428919
+    },
+    "failure": {
+      "group": "fs_s2_1000k_stoch",
+      "seed": 0,
+      "episode": 2,
+      "status": "VEHICLE COLLISION",
+      "seconds": 7.6,
+      "traffic_seed": 1097657231
+    }
+  },
+  "failure_type": "crash_vehicle",
+  "contrast_episode": true
+}

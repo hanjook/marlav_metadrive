@@ -1,0 +1,37 @@
+{
+  "seed": 0,
+  "clips": {
+    "success": {
+      "group": "traffic_det",
+      "episode": 0,
+      "status": "SUCCESS",
+      "seconds": 9.6,
+      "traffic_seed": 1826701614,
+      "num_traffic_vehicles": 6
+    },
+    "failure": {
+      "group": "traffic_det",
+      "episode": 1,
+      "status": "VEHICLE COLLISION",
+      "seconds": 7.5,
+      "traffic_seed": 1367864806,
+      "num_traffic_vehicles": 6
+    },
+    "original_on_failure_episode": {
+      "group": "original_det",
+      "episode": 1,
+      "status": "SUCCESS",
+      "seconds": 9.8,
+      "traffic_seed": 1367864806,
+      "num_traffic_vehicles": 6
+    },
+    "original_on_success_episode": {
+      "group": "original_det",
+      "episode": 0,
+      "status": "OFF ROAD",
+      "seconds": 9.6,
+      "traffic_seed": 1826701614,
+      "num_traffic_vehicles": 6
+    }
+  }
+}

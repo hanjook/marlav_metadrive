@@ -1,0 +1,11 @@
+# Python 3.10 (ray 2.2.0 ships macOS arm64 wheels only up to cp310)
+# MetaDrive itself is installed editable from ./upstream (commit fe54b03, version 0.4.3)
+ray[rllib]==2.2.0      # version the official train_generalization_experiment.py was verified with
+gym==0.23.1            # RLlib 2.2 uses the old gym API; MetaDrive's createGymWrapper converts to it
+gymnasium==0.29.1      # gymnasium 1.x fails to import on Python 3.10.5 (typing error)
+numpy<1.24             # ray 2.2 uses removed numpy aliases
+setuptools<70          # ray 2.2 imports pkg_resources
+torch                  # framework="torch" as in the official example (CPU build)
+certifi                # CA bundle for the one-time MetaDrive asset download
+imageio                # replay GIF
+imageio-ffmpeg         # MP4 export for the meeting comparison video
